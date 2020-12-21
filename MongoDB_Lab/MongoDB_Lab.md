@@ -105,8 +105,9 @@ db.hwuPeople.aggregate([{ $match : { age : {$gt: 35}}}])
 |:--:|
 |*Figure 3: Basic queries*|
 
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) <h3 style="color: red !important" class="text-red mb-2">TASK : write a query to find all the RAs under 40 years old.</h3>
-
+```html
+<h3 style="color: red !important" class="text-red mb-2">TASK : write a query to find all the RAs under 40 years old.</h3>
+```
 ```
 Hint: use $lt for less than.
 ```
@@ -223,6 +224,7 @@ If you try to update a document that is not there, nothing happens:
 ```
 db.hwuPeople.update({first_name: "andy", last_name: "proudlove", role: "ra"}, {age: 47})
 ```
+
 ```
 db.hwuPeople.find({first_name: "andy"})
 ```
@@ -231,9 +233,11 @@ Andy has not been added. However, mongoDB supports “upserts” (update or inse
 ```
 db.hwuPeople.update({first_name: "andy", last_name: "proudlove", role: "ra"}, {age: 47}, {upsert:true})
 ```
+
 ```
 db.hwuPeople.find({first_name: "andy"})
 ```
+
 ```
 db.hwuPeople.find()
 ```
@@ -307,6 +311,7 @@ To delete the hwuPeople collection:
 ```
 db.hwuPeople.drop()
 ```
+
 ```
 show collections
 ```
@@ -387,4 +392,9 @@ db.robots.count()
 
 ```
 --- END OF THE LAB ---
+
+```
+
+```
+
 ```
