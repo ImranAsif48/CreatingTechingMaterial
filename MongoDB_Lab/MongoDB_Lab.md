@@ -213,7 +213,7 @@ Manni has another role (lab assistant), to add this:
 ```
 db.hwuPeople.update({first_name: "manni"}, {$push: {role: "lab assistant"}})
 ```
-**NOTE: $push only works for arrays. **
+**NOTE: $push only works for arrays.**
 
 
 
