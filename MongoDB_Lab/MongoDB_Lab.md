@@ -24,7 +24,7 @@ Connect to mongoDB using the mongo client:
 mongo -u <username> -p --authenticationDatabase <username> --host mongo-server-1
 ```
 
-| ![connection](connection.png) |
+| ![connection](images/connection.png) |
 |:--:|
 |*Figure 1: Screenshot showing connection interaction*|
 
@@ -73,7 +73,7 @@ db.hwuPeople.find()
 db.hwuPeople.find().pretty()
 ```
 You will see 5 people listed, as shown bellow Figure. 
-| ![importing-data](importing-data.png) |
+| ![importing-data](images/importing-data.png) |
 |:--:|
 |*Figure 2: Importing data*|
 
@@ -101,13 +101,12 @@ There are multiple ways to write the same query, e.g.:
 ```
 db.hwuPeople.aggregate([{ $match : { age : {$gt: 35}}}])
 ```
-| ![basic-queries](basic-queries.png) |
+| ![basic-queries](images/basic-queries.png) |
 |:--:|
 |*Figure 3: Basic queries*|
 
-<a><img src="Task1.svg"/></a>
+<a><img src="images/Task1.svg"/></a>
 
-<h3 style="color: red !important" class="text-red mb-2">TASK : write a query to find all the RAs under 40 years old.</h3>
 ```
 Hint: use $lt for less than.
 ```
@@ -120,7 +119,7 @@ Note that the ObjectId is still displayed. To remove that you need:
 ```
 db.hwuPeople.find({},{_id:0,first_name : 1, last_name : 1})
 ```
-| ![return-columns](return-columns.png) |
+| ![return-columns](images/return-columns.png) |
 |:--:|
 | *Figure 4: Choosing the columns to return* |
 
@@ -144,9 +143,9 @@ db.hwuPeople.find({last_name:/burger/i})
 **Note:** `the i makes it a case-insensitive search, remove the i to make it case-sensitive`
 
 You can specify multiple conditions using AND logic to add more conditions to the query; alternatively you can specify OR to permit alternatives - for example find all people that have a role `“assistant prof”` or `“associate prof”`:
-| ![and-or-conditions](and-or-conditions.png) |
-|:--:|
-|*Figure 5: AND / OR conditions*|
+| ![and-or-conditions](images/and-or-conditions.png) |
+| :------------------------------------------------: |
+|          *Figure 5: AND / OR conditions*           |
 
 ```
 db.hwuPeople.find({$or: [{role: 'associate prof'}, {role: 'assistant prof'}]})
@@ -177,7 +176,7 @@ To prove this worked:
 ```
 db.hwuPeople.find({first_name : "joe"})
 ```
-| ![inserting-data](inserting-data.png) |
+| ![inserting-data](images/inserting-data.png) |
 |:--:|
 |*Figure 6: Inserting data*|
 
@@ -216,9 +215,9 @@ db.hwuPeople.update({first_name: "manni"}, {$push: {role: "lab assistant"}})
 
 <h3 style="color:red"> TASK: update your information to provide your email address and your title  (e.g., Mr, Ms etc.).</h3>
 
-| ![updating-entries](updating-entries.png) |
-|:--:|
-|*Figure 7: Updating existing entries*|
+| ![updating-entries](images/updating-entries.png) |
+| :----------------------------------------------: |
+|      *Figure 7: Updating existing entries*       |
 
 If you try to update a document that is not there, nothing happens:
 ```
@@ -228,7 +227,7 @@ db.hwuPeople.update({first_name: "andy", last_name: "proudlove", role: "ra"}, {a
 ```
 db.hwuPeople.find({first_name: "andy"})
 ```
-Andy has not been added. However, mongoDB supports “upserts” (update or insert if there is no document found):
+Andy has not been added. However, mongoDB supports `upserts` (update or insert if there is no document found):
 
 ```
 db.hwuPeople.update({first_name: "andy", last_name: "proudlove", role: "ra"}, {age: 47}, {upsert:true})
@@ -246,9 +245,9 @@ Notice what has happened: a new document has been added, but it only contains `a
 ```
 db.hwuPeople.remove({age: 47})
 ```
-| ![upsert-interaction](upsert-interaction.png) |
-|:--:|
-|*Figure 8: Upsert interaction*|
+| ![upsert-interaction](images/upsert-interaction.png) |
+| :--------------------------------------------------: |
+|            *Figure 8: Upsert interaction*            |
 <h3 style="color:red"> TASK: Write an upsert query to properly insert Andy Proudlove into the database. </h3>
 
 <h3 style="color:red"> TASK: Use the remove command to delete Joe Bloggs from the database. </h3>
@@ -263,9 +262,9 @@ For queries to be efficient they must use an index. To check if a query uses an 
 ```
 db.hwuPeople.find({age : {$gt: 35}}).explain()
 ```
-| ![explain-query-plan](explain-query-plan.png) |
-|:--:|
-|*Figure 9: Explain query plan*|
+| ![explain-query-plan](images/explain-query-plan.png) |
+| :--------------------------------------------------: |
+|            *Figure 9: Explain query plan*            |
 
 We can see that the winning plan is `COLLSCAN` meaning that the collection is being scanned , `i.e. no index was used.`
 
@@ -285,9 +284,9 @@ Also try the `executionStats` to see how many documents were examined this time.
 ```
 hwuPeople.find({age : {$gt: 35}}).explain("executionStats")
 ```
-| ![after-index-creation](after-index-creation.png) |
-|:--:|
-|*Figure 10: Explain plan after index creation*|
+| ![after-index-creation](images/after-index-creation.png) |
+| :------------------------------------------------------: |
+|      *Figure 10: Explain plan after index creation*      |
 
 ## 7. BACKUP
 Exit mongo and use `mongoexport` to backup your current database:
@@ -297,9 +296,9 @@ mongodump -u <username> --host mongo-server- 1 --authenticationDatabase <usernam
 Note that there is no `-p` parameter in the `mongodump` command.
 In your current directory you should see a `dump` folder. Your files are in there.
 
-| ![exporting-collection](exporting-collection.png) |
-|:--:|
-|*Figure 11: Exporting a collection*|
+| ![exporting-collection](images/exporting-collection.png) |
+| :------------------------------------------------------: |
+|           *Figure 11: Exporting a collection*            |
 
 You can copy them to another machine and use `mongoimport` to import them.
 
@@ -315,9 +314,9 @@ db.hwuPeople.drop()
 ```
 show collections
 ```
-| ![dropping-collections](dropping-collections.png) |
-|:--:|
-| *Figure 12: Dropping a collection* |
+| ![dropping-collections](images/dropping-collections.png) |
+| :------------------------------------------------------: |
+|            *Figure 12: Dropping a collection*            |
 ## 9. EXERCISE
 
 **TASK:** 
@@ -392,9 +391,4 @@ db.robots.count()
 
 ```
 --- END OF THE LAB ---
-
-```
-
-```
-
 ```
