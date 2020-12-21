@@ -19,6 +19,7 @@ Create your XML document following this template:
 </films>
 ```
 
+
 ### Check your XML
 
 Use a web browser to open the following page: `https://www.w3schools.com/xml/xml_validator.asp` Scroll down the page to the `Syntax-check Your XML` section and copy/paste your XML to validate it. If there is an error in the XML then check the debug information, and correct the XML. 
