@@ -251,8 +251,10 @@ db.hwuPeople.remove({age: 47})
 ```
 | ![upsert-interaction](images/upsert-interaction.png) |
 | :--------------------------------------------------: |
-|            *Figure 8: Upsert interaction*            |
+|            *Figure 8: Upsert interaction*    |
+
 ![Task5](images/Task5.svg)
+
 
 ![Task6](images/Task6.svg)
 
