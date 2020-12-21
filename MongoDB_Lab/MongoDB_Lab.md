@@ -105,7 +105,7 @@ db.hwuPeople.aggregate([{ $match : { age : {$gt: 35}}}])
 |:--:|
 |*Figure 3: Basic queries*|
 
-<h3 style="color: red !important">TASK : write a query to find all the RAs under 40 years old.</h3>
+<h3 style="color: red !important" class="text-red mb-2">TASK : write a query to find all the RAs under 40 years old.</h3>
 
 ```
 Hint: use $lt for less than.
