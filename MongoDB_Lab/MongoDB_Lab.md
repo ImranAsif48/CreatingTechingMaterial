@@ -16,7 +16,7 @@ In this document commands are shown using fixed width font, and variables that y
 
 ## 2. CONNECTING
 
-Open a Linux terminal windowshow (in Edinburgh GRID lab use the Virtual Box virtual machine) 
+Open a Linux terminal window show (in Edinburgh GRID lab use the Virtual Box virtual machine) 
 
 Connect to mongoDB using the mongo client: 
 
@@ -105,7 +105,7 @@ db.hwuPeople.aggregate([{ $match : { age : {$gt: 35}}}])
 |:--:|
 |*Figure 3: Basic queries*|
 
-<a><img src="images/Task1.svg"/></a>
+![Task1](images/Task1.svg)
 
 ```
 Hint: use $lt for less than.
@@ -165,7 +165,7 @@ db.hwuPeople.find({age : {$exists: false}}).count()
 ```
 To sort the results of a `find` query append `.sort({ name : 1})` after the find() statement. Use 1 for ascending order, and -1 for descending order.
 
-<h3 style="color:red">TASK: Sort the entire list of people in ascending order by age.</h3>
+![Task2](images/Task2.svg)
 
 ## 5. INSERTING, UPDATING & REMOVING
 To insert someone into the database:
@@ -180,7 +180,8 @@ db.hwuPeople.find({first_name : "joe"})
 |:--:|
 |*Figure 6: Inserting data*|
 
-<h3 style="color:red">TASK: add yourself, specifying your _id manually.</h3>
+![Task3](images/Task3.svg)
+
 ```
 HINT: treat “_id” as just another name/value pair.
 ```
@@ -190,7 +191,8 @@ Dr Burger has been promoted and so we need to change his `title` and his `role` 
 db.hwuPeople.update({last_name : "burger"}, {$set: {title : "prof", role : "prof"}})
 ```
 
-<h3 style="color:red">QUESTION: What are the potential side effects of the previous statement?</h3>
+![question1](images/question1.svg)
+
 ```
 HINT: “burger” is a rare last name in the UK and this is a small dataset
 ```
@@ -213,7 +215,9 @@ db.hwuPeople.update({first_name: "manni"}, {$push: {role: "lab assistant"}})
 ```
 **NOTE: $push only works for arrays. **
 
-<h3 style="color:red"> TASK: update your information to provide your email address and your title  (e.g., Mr, Ms etc.).</h3>
+
+
+![Task4](images/Task4.svg)
 
 | ![updating-entries](images/updating-entries.png) |
 | :----------------------------------------------: |
@@ -248,9 +252,9 @@ db.hwuPeople.remove({age: 47})
 | ![upsert-interaction](images/upsert-interaction.png) |
 | :--------------------------------------------------: |
 |            *Figure 8: Upsert interaction*            |
-<h3 style="color:red"> TASK: Write an upsert query to properly insert Andy Proudlove into the database. </h3>
+![Task5](images/Task5.svg)
 
-<h3 style="color:red"> TASK: Use the remove command to delete Joe Bloggs from the database. </h3>
+![Task6](images/Task6.svg)
 
 ```
 HINT: most of the operations that work with the insert command also work with the remove command.
@@ -305,7 +309,7 @@ You can copy them to another machine and use `mongoimport` to import them.
 ## 8. DELETING A COLLECTION
 
 Log into mongo and switch to your database. 
-To delete the hwuPeople collection:
+To delete the `hwuPeople` collection:
 
 ```
 db.hwuPeople.drop()
@@ -335,14 +339,20 @@ Alasdair supervises Iain and Steve.
 Albert supervises Steve and Hugh.
 HINT: use an array to hold the supervisor information against each student.
 ```
-<h3 style="color:red"> TASK: Now construct an optimized query to list all of Alasdair Gray’s students.</3>
 
-<h3 style="color:red"> TASK: Write a query to find all the students with 2 supervisors.</h3>
+![Task7](images/Task7.svg)
+
+
+
+![Task8](images/Task8.svg)
+
 ```
 HINT: use the condition $size: 2.
 ```
 
 <h3 style="color:red"> TASK: Write a query to find those with more than 1 supervisor</h3>
+![Task9](images/Task9.svg)
+
 ```
 HINT: use the condition $where and the javascript length feature.
 ```
