@@ -5,7 +5,7 @@
 Open a text editor like Notepad++ and create an XML document which stores the following data about films. It’s a good idea to save the XML to a file on your drive (e.g films.xml) before copying the text to the web link below.
 
 ### FILMS:
-
+  
 ![films-table](films-table.png)
 
 Create your XML document following this template:
