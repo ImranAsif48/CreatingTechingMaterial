@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1012" height="40">
+  <text font-size="30" font-weight="bold" x="10" y="30">
+    <tspan fill="red">TASK : write a query to find all the RAs under 40 years old.</tspan>
+  </text>
+</svg>
