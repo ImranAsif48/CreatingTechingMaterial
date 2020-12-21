@@ -46,14 +46,24 @@ This dataset is available to download in XML from here: `http://www.macs.hw.ac.u
 Copy across the XML data and write your XPath answers to the following questions here: `https://www.freeformatter.com/xpath-tester.html`
 
 1. Get all the album titles
+
 2. Show the artist for the last album on the list
+
 3. Show all the details for the `'Jazz'` genre albums
+
 4. Show the album title for those released before 1980 (not inclusive of 1980)
+
 5. Show the bookmarked tracks for all `'Rock'` genre albums
+
 6. Show a COUNT how many bookmarked tracks there are in total
+
 7. Show the album title for records where 2 or more tracks have been bookmarked
+
 8. Show a list of the album titles which include the word `'Album'` in the title
+
 9. Show a list of the album title and artist with the 'Rock' genre
+
+   
 
 ### HINTS:
 
