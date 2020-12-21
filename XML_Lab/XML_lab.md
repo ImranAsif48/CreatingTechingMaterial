@@ -14,7 +14,7 @@ Create your XML document following this template:
 <films>
     <film>
     	<title>...</title>
-		    ...
+		...
     </film>
 </films>
 ```
@@ -55,13 +55,11 @@ Copy across the XML data and write your XPath answers to the following questions
 8. Show a list of the album titles which include the word `'Album'` in the title
 9. Show a list of the album title and artist with the 'Rock' genre
 
-
-
 ### HINTS:
 
 Check the lecture notes for examples of XPath also check this link :
 `https://www.w3schools.com/xml/xpath_syntax.asp`
 
 ```
-									==========END OF THE LAB==========
+==========END OF THE LAB==========
 ```
