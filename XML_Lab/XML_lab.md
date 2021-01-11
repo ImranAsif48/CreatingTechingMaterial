@@ -6,7 +6,11 @@ Open a text editor like Notepad++ and create an XML document which stores the fo
 
 ### FILMS:
 
-![films-table](films-table.png)
+| Title               | Classification | Stars                                                | Genre                                 |
+| ------------------- | -------------- | ---------------------------------------------------- | ------------------------------------- |
+| Joker               | R              | Joaquin Phoenix<br />Robert De Niro                  | Crime<br />Drama<br />Thriller        |
+| Singing in the Rain | G              | Gene Kelly<br />Donald O’Connor<br />Debbie Reynolds | Comedy<br />Musical<br />Romance      |
+| The Lion King       | PG             | Donald Glover<br />Beyonce<br />Seth Rogen           | Animation<br />Adventure<br />Musical |
 
 Create your XML document following this template:
 
