@@ -2,7 +2,7 @@
 
 ## 1) Create a Valid XML document
 
-Open a text editor like Notepad++ and create an XML document which stores the following data about films. It’s a good idea to save the XML to a file on your drive (e.g films.xml) before copying the text to the web link below. 
+Open a text editor like Notepad++, Atom, Gedit, and Visual Studio Code. Create an XML document which stores the following data about films. It’s a good idea to save the XML to a file on your drive (e.g films.xml) before copying the text to the web link below. 
 
 ### FILMS:
 
@@ -26,14 +26,20 @@ Create your XML document following this template:
 
 ### Check your XML
 
-Use a web browser to open the following page: `https://www.w3schools.com/xml/xml_validator.asp` Scroll down the page to the `Syntax-check Your XML` section and copy/paste your XML to validate it. If there is an error in the XML then check the debug information, and correct the XML. 
+Use a web browser to open the following page: https://www.w3schools.com/xml/xml_validator.asp Scroll down the page to the `Syntax-check Your XML` section and copy/paste your XML to validate it. If there is an error in the XML then check the debug information, and correct the XML. 
 
-Once you have completed this task you can close this webpage and text editor (e.g. Notepad++).
+Once you have completed this task you can close this webpage and text editor (e.g., Notepad++, , Atom, Gedit, Visual Studio Code).
 
 ## 2) XPath
 
 We’ll now take a look at using XPath to filter an XML document with information about music albums as follows:
-![music-albums-table](music-albums-table.png)
+
+| Artist     | Album Title               | Genre     | Released Date | Bookmarked Tracks                                 |
+| ---------- | ------------------------- | --------- | ------------- | ------------------------------------------------- |
+| Bill Evans | The Bill Evans Album      | Jazz      | 1971          | Sugar Plum<br />Waltz for Debby                   |
+| Queen      | Jazz                      | Rock      | 1978          | Don't Stop Me Now                                 |
+| Jamiroquai | Travelling Without Moving | Acid Jazz | 1996          | Virtual Insanity<br />Cosmic Girl<br />High Times |
+| Muse       | Drones                    | Rock      | 2015          | Reapers<br />The Handler                          |
 
 This dataset is available to download in XML from here: `http://www.macs.hw.ac.uk/~pb56/f21df.xml` Take a look at the XML document structure:
 
@@ -47,7 +53,7 @@ This dataset is available to download in XML from here: `http://www.macs.hw.ac.u
 </albums>
 ```
 
-Copy across the XML data and write your XPath answers to the following questions here: `https://www.freeformatter.com/xpath-tester.html`
+Copy across the XML data and write your XPath answers to the following questions here: https://www.freeformatter.com/xpath-tester.html
 
 1. Get all the album titles
 
@@ -72,7 +78,7 @@ Copy across the XML data and write your XPath answers to the following questions
 ### HINTS:
 
 Check the lecture notes for examples of XPath also check this link :
-`https://www.w3schools.com/xml/xpath_syntax.asp`
+https://www.w3schools.com/xml/xpath_syntax.asp
 
 ```
 ==========END OF THE LAB==========
