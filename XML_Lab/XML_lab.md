@@ -41,7 +41,7 @@ We’ll now take a look at using XPath to filter an XML document with informatio
 | Jamiroquai | Travelling Without Moving | Acid Jazz | 1996          | Virtual Insanity<br />Cosmic Girl<br />High Times |
 | Muse       | Drones                    | Rock      | 2015          | Reapers<br />The Handler                          |
 
-This dataset is available to download in XML from here: `http://www.macs.hw.ac.uk/~pb56/f21df.xml` Take a look at the XML document structure:
+This dataset is available to download in XML from here: http://www.macs.hw.ac.uk/~pb56/f21df.xml Take a look at the XML document structure:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,12 +80,6 @@ Copy across the XML data and write your XPath answers to the following questions
 Check the lecture notes for examples of XPath also check this link :
 
 https://www.w3schools.com/xml/xpath_syntax.asp
-
-<a href="http://www.google.com" target="__blank">Link to Google</a>
-
-[https://www.w3schools.com/xml/xpath_syntax.asp]: https://www.w3schools.com/xml/xpath_syntax.asp	"{:target="_blank"}"
-
-
 
 ```
 ==========END OF THE LAB==========
