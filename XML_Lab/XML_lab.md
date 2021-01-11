@@ -83,7 +83,7 @@ https://www.w3schools.com/xml/xpath_syntax.asp
 
 <a href="http://www.google.com" target="__blank">Link to Google</a>
 
-[https://www.w3schools.com/xml/xpath_syntax.asp]: https://www.w3schools.com/xml/xpath_syntax.asp	"target:"
+[https://www.w3schools.com/xml/xpath_syntax.asp]: https://www.w3schools.com/xml/xpath_syntax.asp	"{:target="_blank"}"
 
 
 
