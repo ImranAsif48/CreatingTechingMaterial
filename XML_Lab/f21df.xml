@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<albums>
+
+  <album>
+    <artist>Bill Evans</artist>
+    <album_title>The Bill Evans Album </album_title>
+    <genre>Jazz</genre>
+    <released_date>1971</released_date>
+    <bookmarked_tracks>
+      <track_title>Sugar Plum</track_title>
+      <track_title>Waltz for Debby</track_title>
+    </bookmarked_tracks>
+  </album>
+
+  <album>
+    <artist>Queen</artist>
+    <album_title>Jazz</album_title>
+    <genre>Rock</genre>
+    <released_date>1978</released_date>
+    <bookmarked_tracks>
+      <track_title>Don't Stop Me Now</track_title>
+    </bookmarked_tracks>
+  </album>
+
+  <album>
+    <artist>Jamiroquai</artist>
+    <album_title>Travelling Without Moving</album_title>
+    <genre>Acid Jazz</genre>
+    <released_date>1996</released_date>
+    <bookmarked_tracks>
+      <track_title>Virtual Insanity</track_title>
+      <track_title>Cosmic Girl</track_title>
+      <track_title>High Times</track_title>
+    </bookmarked_tracks>
+  </album>
+
+  <album>
+    <artist>Muse</artist>
+    <album_title>Drones</album_title>
+    <genre>Rock</genre>
+    <released_date>2015</released_date>
+    <bookmarked_tracks>
+      <track_title>Reapers</track_title>
+      <track_title>The Handler</track_title>
+    </bookmarked_tracks>
+  </album>
+
+</albums>
