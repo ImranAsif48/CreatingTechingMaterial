@@ -53,7 +53,7 @@ This dataset is available to download in XML from here: `http://www.macs.hw.ac.u
 </albums>
 ```
 
-Copy across the XML data and write your XPath answers to the following questions here: [https://www.freeformatter.com/xpath-tester.html](https://www.freeformatter.com/xpath-tester.html){:target="_blank" rel="noopener"} 
+Copy across the XML data and write your XPath answers to the following questions here: <a href="https://www.freeformatter.com/xpath-tester.html" target="_blank">`https://www.freeformatter.com/xpath-tester.html`</a>
 
 1. Get all the album titles
 
