@@ -1,10 +1,16 @@
 # XML Lab
 
-## 1) Create a Valid XML document
+ ## Configure Eclipse with GitLab
+ 1. Open your GitLab account (If you are new on GitLab then register yourself on GitLab. See  [video](https://web.microsoftstream.com/video/2a478620-8bad-45da-98d6-eb3f2d9c17e2)).
+ 2. Add SSH keys to GitLab with Linux. More help see [video](https://web.microsoftstream.com/video/0be001a9-85fe-43a7-8a50-ab4a5afbbd22)
+ 3. Importing repository from GitLab to Eclipse. See [video](https://web.microsoftstream.com/video/fba33dae-0508-4c30-9382-9561d18ea802)
+ 4. Imported repository contains all task files (task1.xml, xpaths folder).
+ 5. When you complete the task commit it to GitLab repository.
+ 6. Pushing task commits from Eclipse to GitLab. See [video](https://web.microsoftstream.com/video/a332d698-37b9-47f1-84aa-c750e7f1e1bd)
 
-Open a text editor like Notepad++, Atom, GEdit, or Visual Studio Code. (Code editors provide syntax highlighting for XML, making it easier to understand your work.)
+## 1) Write a Valid XML document
 
-Create an XML document which stores the following data about films. It’s a good idea to save the XML to a file on your drive (e.g films.xml) before copying the text to the web link below. 
+After successfully imported the repository you get all the tasks file. Now you need to write the Valid XML document. e.g., Open task1.xml file and write XML content.
 
 ### FILMS:
 
@@ -33,7 +39,7 @@ Use a web browser to open the [W3 Schools XML Validator](https://www.w3schools.c
 
 Scroll down the page to the `Syntax-check Your XML` section and copy/paste your XML to validate it. If there is an error in the XML then check the debug information, and correct the XML. 
 
-Once you have completed this task you can close this webpage and your file.
+Once you have completed this task you can close this webpage and commits it to GitLab repository.
 
 ## 2) XPath
 
